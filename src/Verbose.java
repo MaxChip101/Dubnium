@@ -1,3 +1,5 @@
+package src;
+
 public class Verbose {
     public static void ThrowError(String msg, boolean verbose) {
         if (verbose) {

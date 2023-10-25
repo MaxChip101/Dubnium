@@ -69,6 +69,7 @@ public class Main {
             if (tokens[0].contains("FN")) {
                 Function func = new Function();
                 func.name = tokens[1];
+                // check for function arguments
                 if (tokens[2].contains("|")) {
                     ArrayList<String[]> args = new ArrayList<>();
                     String[] tempArgsArray = new String[2];
@@ -83,11 +84,16 @@ public class Main {
                             tempArgsArray[argindx] = tokens[arg];
                             argindx++;
                         }
+
                     }
+
                     func.args = args.toArray(new String[args.size()][]);
                     System.out.println(Arrays.toString(func.args[0]));
                     System.out.println(Arrays.toString(func.args[1]));
+
+                    // end of function argument check
                 }
+                // end of function creation detection
             }
 
         }

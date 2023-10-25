@@ -1,5 +1,0 @@
-FN hello | int num1 , int num2 , bool check :
-FORCEPRINT |> num1, |> num2 ~~
-EXT |> 90 ~~
-
-: hello | 90 , 10 ~~
